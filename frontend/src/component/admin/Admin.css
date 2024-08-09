@@ -1,0 +1,278 @@
+
+.main-1{
+    padding: 0;
+    margin: 0;
+}
+
+.dashboardmenu{
+    background-color: #FFFFFF;
+    color: #464255;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.head {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-head{
+    font-size: 35px;
+    font-weight: bold;
+}
+.dot{
+    font-size: 60px;
+    font-weight: bold;
+    color:#00B074;
+}
+.small{
+    padding: 0;
+    margin: 0;
+    margin-top: -16px;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dmenu{
+    width: 100%;
+    height: 100%;
+}
+.inner-dmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner-menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #464255;
+}
+
+.inner-menu-list.active {
+    border: 2px saddlebrown;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+    background-color: #d7f5ea;
+    font-weight: bold;
+    color: #00B074;
+  }
+
+/* Upper Header */
+.upperheader{
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 2px solid #7a7777;
+}
+.searcharea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+}
+.pops-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    gap: 15px;
+}
+.notification, .chat, .setting{
+    font-size: 25px;
+    width: 60px;
+    height: 44px;
+    background: #afdef9;
+    border-radius: 31%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    width: 50%;
+}
+.User{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.user-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 5px;
+}
+.user-name small{
+    font-size: 15px;
+    color: #969BA0;
+}
+.user-name span{
+    font-size: 25px;
+    font-weight: bold;
+    color: #464255;
+}
+.user-image{
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    border-radius: 50%;
+}
+.useimg{
+    height: 32px;
+}
+/* Dashboard */
+
+.main-2{
+    background-color: #d0cdcd;
+    padding: 0;
+    margin: 0;
+}
+.dashboard{
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+
+.admin-side-menu {
+    display: none; 
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .admin {
+        overflow: hidden;
+    }
+    
+    .main-1 {
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+        background: #fff;
+        border-right: 2px solid #ccc;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+        z-index: 1000;
+    }
+    
+    .main-1.show {
+        transform: translateX(0);
+    }
+    
+    .admin-side-menu {
+        display: block; 
+        font-size: 25px;
+        width: 60px;
+        height: 38px;
+        background: #afdef9;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    
+    }
+    .admin-close{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        font-size: 25px;
+    }
+    .dashboardmenu{
+        margin-top: -10px;
+    }
+
+    .main-2{
+        width: 92%;
+    }
+    .searcharea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        border: none;
+    }
+    .has-search{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .User{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 6px;
+        gap: 0;
+    }
+    .user-name span{
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .admin {
+        overflow: hidden;
+    }
+    
+    .main-1 {
+        display: none; 
+    }
+    
+    .admin-side-menu {
+        display: none; 
+    }
+}

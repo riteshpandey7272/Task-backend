@@ -1,0 +1,48 @@
+.resturentcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resturentcard{
+    border: 2px solid #3E4954;
+    border-radius: 25px;
+    padding: 50px;
+    background: #e1f6ef;
+    color: #3E4954;
+}
+.restro-input{
+    border: 2px solid #3E4954;
+    border-radius: 10px;
+}
+.next-button{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Button{
+    border: 2px solid #00B074;
+    border-radius: 10px;
+    padding: 5px;
+    background: #00B074;
+    color: #3E4954;
+    width: 60px;
+}
+.Button:hover{
+    color: #e1f6ef;
+    border: 2px solid #00B074;
+}
+.popup-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
